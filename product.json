@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "ProductName": "iphone",
+      "ProductType": "mobile",
+      "Price": "200",
+      "Description": "mobile phone ipsum"
+    },
+    {
+      "ProductName": "iphone 12 mini",
+      "ProductType": "mobile",
+      "Price": "200",
+      "Description": "mobile phone",
+      "Image": "mobileimg1.jpg",
+      "id": 2
+    },
+    {
+      "ProductName": "iphone12",
+      "ProductType": "mobile ",
+      "Price": "400",
+      "Description": "iphone mobile",
+      "Image": "mobileimg1.jpg",
+      "id": 4
+    },
+    {
+      "ProductName": "iphone14",
+      "ProductType": "mobile 14",
+      "Price": "600",
+      "Description": "lorem ipsum",
+      "Image": "mobileimg1.jpg",
+      "id": 5
+    },
+    {
+      "ProductName": "iphone 14pro",
+      "ProductType": "mobile",
+      "Price": "800",
+      "Description": "iphone descf",
+      "Image": "mobileimg1.jpg",
+      "id": 6
+    },
+    {
+      "ProductName": "iphone 14 plus",
+      "ProductType": "mobile",
+      "Price": "400",
+      "Description": "lorem ipsum dummy",
+      "Image": "mobileimg1.jpg",
+      "id": 7
+    },
+    {
+      "ProductName": "dsdxvv",
+      "ProductType": "lorem type",
+      "Price": "400",
+      "Description": "lorem name",
+      "Image": "mobileimg1.jpg",
+      "id": 8
+    },
+    {
+      "ProductName": "fdsf",
+      "ProductType": "dfdsf type",
+      "Price": "260",
+      "Description": "vfgfdg sdsd ffd reer",
+      "Image": "mobileimg1.jpg",
+      "id": 9
+    },
+    {
+      "ProductName": "gfgd",
+      "ProductType": "dfdsf",
+      "Price": "200",
+      "Description": "fdgfdgdg",
+      "id": 10
+    }
+  ]
+}
