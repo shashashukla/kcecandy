@@ -1,28 +1,44 @@
-// import EditCandyPage from "@/pages/EditCandy.vue";
-import Homepage from "@/pages/index.vue";
-import {shallowMount} from "@vue/test-utils";
+import HomePage from "@/pages/index.vue";
+import {shallowMount, createLocalVue} from "@vue/test-utils";
+import Vuex from "vuex";
 
-// const $nuxt = {
-//   $on: jest.fn(),
-// };
+const localVue = createLocalVue();
+localVue.use(Vuex);
 
-describe("Homepage", () => {
-  test("Homepage render", () => {
-    const wrapper = shallowMount(Homepage);
+describe("Home page", () => {
+  let actions;
+  let getters;
+  let state;
+  let store;
+
+  beforeEach(() => {
+    actions = {
+      addProductToCart: jest.fn(),
+    };
+    getters = {
+      "modules/addToCart/cardData": [],
+      "modules/addToCart/getCounter": "",
+    };
+    state = {
+      cart: [],
+      count: 0,
+    };
+
+    store = new Vuex.Store({
+      computed: {
+        state,
+        actions,
+        getters,
+        namespaced: true,
+      },
+    });
+  });
+
+  it("Homepage render", () => {
+    const wrapper = shallowMount(HomePage, {
+      store,
+      localVue,
+    });
     expect(wrapper.vm).toBeTruthy();
   });
 });
-
-// describe("render whole page including child components", () => {
-//   let wrapper;
-//   beforeEach(() => {
-//     wrapper = mount(Homepage, {
-//       mocks: {
-//         $nuxt,
-//       },
-//     });
-//   });
-//   test("homepage component render including child components", () => {
-//     expect(wrapper.vm).toBeTruthy();
-//   });
-// });
