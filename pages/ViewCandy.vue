@@ -62,7 +62,6 @@ export default {
         ProductType: "",
         Price: "",
         Description: "",
-        // Image:'mobileimg1.jpg',
       },
 
     };
@@ -75,31 +74,20 @@ export default {
   methods: {
 
     getallproducts() {
-      console.log("getdata");
-
       const id = this.$route.params.id;
 
-      console.log("idval", id);
-
       const url = ("http://localhost:3000/posts/"+id);
-      // (`/api.github.com/users/${login}`)
       const options = {
         method: "GET",
         headers: {
           "Accept": "application/json",
           "Content-Type": "application/json;charset=UTF-8",
         },
-        // body: JSON.stringify({
-        //   id: 10,
-        //   //b: 20,
-        // }),
       };
       fetch(url, options)
           .then((response) => response.json())
           .then((data) => {
-            console.log("resdata", data);
             this.ViewCandyForm = data;
-            console.log("thisallproducts", this.ViewCandyForm);
           });
     },
 

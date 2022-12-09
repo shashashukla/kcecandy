@@ -51,9 +51,6 @@ export default {
   },
 
   computed: {
-    // ...mapGetters({
-    //   cardData: "modules/addToCart/cardData",
-    // }),
     ...mapGetters("modules/addToCart", ["cardData"]),
   },
 

@@ -56,7 +56,6 @@
 </template>
 
 <script>
-// import axios from 'axios';
 import fetch from "node-fetch";
 export default {
   name: "AddCandyPage",
@@ -82,8 +81,6 @@ export default {
 
 
     saveForm() {
-      console.log("saveformmethod");
-
       const url = ("http://localhost:3000/posts");
       const options = {
         method: "POST",
@@ -99,11 +96,8 @@ export default {
         fetch(url, options)
             .then((response) => response.json())
             .then((data) => {
-              // return data.ProductName;
               return data;
               // this.$swal('Product Added!!!');
-              // this.$router.push('/');
-              // this.$router.push({name: 'index'});
             });
       } catch (error) {
         throw error;

@@ -41,10 +41,13 @@
 
                       <div class="col-sm-12 col-md-5 float-right ">
 
-                        <b-button @click="goToCartPage()"
-                        class="add_new_candy" size="sm">Cart
-                          <b-badge variant="light">{{ getCounter }}</b-badge>
-                        </b-button>
+                        <button @click="goToCartPage()"
+                        class="add_new_candy btn btn-secondary
+                        btn-rounded btn-sm my-0"
+                        size="sm">Cart
+                        <span class="badge badge-light" variant="light">
+                          {{ getCounter }}</span>
+                        </button>
 
                         <span class="table-add float-right mb-3 mr-2">
 
@@ -145,11 +148,7 @@ export default {
   },
 
   computed: {
-
-    ...mapGetters({
-      getCounter: "modules/addToCart/getCounter",
-      cardData: "modules/addToCart/cardData",
-    }),
+    ...mapGetters("modules/addToCart", ["getCounter", "cardData"]),
 
     getallproducts() {
       if (this.search) {
@@ -167,7 +166,6 @@ export default {
 
 
   methods: {
-
 
     ...mapMutations({
       increment: "modules/addToCart/increment",

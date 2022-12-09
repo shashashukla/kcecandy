@@ -1,27 +1,25 @@
 import CartCandyPage from "@/pages/cartpage.vue";
 import {shallowMount, createLocalVue} from "@vue/test-utils";
 import Vuex from "vuex";
-import myModule from "../store/modules/addToCart.js";
-// import {addtocart} from "@/store/module/addToCart.js";
+
 const localVue = createLocalVue();
 localVue.use(Vuex);
 
-describe("MyComponent.vue", () => {
+describe("Add to cart page", () => {
   let actions;
   let getters;
   let state;
   let store;
-  let wrapper;
 
   beforeEach(() => {
     actions = {
       addProductToCart: jest.fn(),
     };
     getters = {
-      cardData: jest.fn(),
+      "modules/addToCart/cardData": [],
     };
     state = {
-      cart: jest.fn(),
+      cart: [],
     };
 
     store = new Vuex.Store({
@@ -31,12 +29,17 @@ describe("MyComponent.vue", () => {
         getters,
         namespaced: true,
       },
-
     });
   });
 
-  wrapper = shallowMount(CartCandyPage, {
-    localVue, store,
+  it("test cart page rendering with NuxLink and vuex store", () => {
+    const wrapper = shallowMount(CartCandyPage, {
+      store,
+      localVue,
+      stubs: {
+        NuxtLink: true,
+      },
+    });
+    expect(wrapper.vm).toBeTruthy();
   });
-  expect(wrapper.vm).toBeTruthy();
 });

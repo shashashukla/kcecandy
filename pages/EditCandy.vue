@@ -82,13 +82,7 @@ export default {
   methods: {
 
     getallproducts() {
-      console.log("getdata");
-
       const id = this.$route.params.id;
-
-      console.log("idval", id);
-
-      // const url = ("http://localhost:3000/posts/"+id);
       const url =(`http://localhost:3000/posts/${id}`);
       const options = {
         method: "GET",
@@ -96,10 +90,6 @@ export default {
           "Accept": "application/json",
           "Content-Type": "application/json;charset=UTF-8",
         },
-        // body: JSON.stringify({
-        //   id: 10,
-        //   //b: 20,
-        // }),
       };
       fetch(url, options)
           .then((response) => response.json())

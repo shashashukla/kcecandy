@@ -1,5 +1,4 @@
 import AddCandyPage from "@/pages/AddCandy.vue";
-// import Homepage from "@/pages/index.vue";
 import {shallowMount} from "@vue/test-utils";
 
 describe("AddCandy page", () => {
