@@ -1,0 +1,34 @@
+[
+   {
+      "Productid":1,
+      "ProductName":"Iphone x",
+      "ProductType":"Mobile",
+      "Price":"200",
+      "Description":"Good Mobile Iphone x",
+	  "Image":"mobileimg1.jpg"
+   },
+   {
+      "Productid":2,
+      "ProductName":"Iphone 12",
+      "ProductType":"Mobile",
+      "Price":"200",
+      "Description":"Good Mobile Iphone x",
+	  "Image":"mobileimg2.jpg"
+   },
+   {
+      "Productid":3,
+      "ProductName":"Iphone 14",
+      "ProductType":"Mobile",
+      "Price":"200",
+      "Description":"Good Mobile Iphone x",
+	  "Image":"mobileimg3.jpg"
+   },
+   {
+      "Productid":4,
+      "ProductName":"Iphone 14 pro",
+      "ProductType":"Mobile",
+      "Price":"200",
+      "Description":"Good Mobile Iphone x",
+	  "Image":"mobileimg2.jpg"
+   }
+]

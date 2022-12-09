@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id":1,
+      "ProductName":"Iphone x",
+      "ProductType":"Mobile",
+      "Price":"200",
+      "Description":"Good Mobile Iphone x",
+	  "Image":"mobileimg1.jpg"
+   },
+   {
+      "id":2,
+      "ProductName":"Iphone 12",
+      "ProductType":"Mobile",
+      "Price":"200",
+      "Description":"Good Mobile Iphone x",
+	  "Image":"mobileimg2.jpg"
+   },
+  ]
+  
+}
