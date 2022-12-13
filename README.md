@@ -2,6 +2,7 @@
 
 ## Build Setup
 
+```bash
 # install json server
 npm install -g json-server
 
@@ -10,7 +11,6 @@ npm install -g json-server
 # run json server
 json-server product.json
 
-```bash
 # install dependencies
 $ npm install
 
